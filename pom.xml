@@ -700,7 +700,8 @@
         <!-- Needed for hooks -->
         <aopalliance.version>1.0</aopalliance.version>
         <jackson.version>2.9.9</jackson.version>
-        <jackson.databind.version>2.10.0</jackson.databind.version>
+        <!-- jackson.databind的jar包不会link到hive lib目录，因为hive自带有jackson-databind-2.9.9.jar -->
+        <jackson.databind.version>2.9.9</jackson.databind.version>
 
         <!-- Apache commons -->
         <commons-conf.version>1.10</commons-conf.version>
